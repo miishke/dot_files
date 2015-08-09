@@ -1,0 +1,23 @@
+[user]
+    name = Milos Miljkovic
+    email = mmiljkovic777@gmail.com
+[color]
+    ui = true
+[core]
+    editor = subl -n -w
+[diff]
+    tool = meld
+[difftool]
+    prompt = false
+[merge]
+    log = true
+    summary = true
+    tool = meld
+[mergetool]
+    prompt = false
+[alias]
+    br = branch
+    ch = checkout
+    co = commit
+    pu = push
+    st = status
