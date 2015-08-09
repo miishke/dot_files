@@ -3,7 +3,7 @@
     { "keys": ["ctrl+b"], "command": "toggle_side_bar" },
     // Go to left bracket
     {
-        "keys": ["ctrl+alt+up"],
+        "keys": ["ctrl+super+up"],
         "command": "bh_key",
         "args":
         {
@@ -19,7 +19,7 @@
     },
     // Go to right bracket
     {
-        "keys": ["ctrl+alt+down"],
+        "keys": ["ctrl+super+down"],
         "command": "bh_key",
         "args":
         {
@@ -36,7 +36,7 @@
         // Select text between brackets
     {
         "no_outside_adj": null,
-        "keys": ["ctrl+alt+s"],
+        "keys": ["ctrl+super+s"],
         "command": "bh_key",
         "args":
         {
@@ -50,7 +50,7 @@
     },
     // Select text including brackets
     {
-        "keys": ["ctrl+alt+d"],
+        "keys": ["ctrl+super+d"],
         "command": "bh_key",
         "args":
         {
