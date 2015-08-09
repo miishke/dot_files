@@ -1,0 +1,66 @@
+/* Set fonts */
+/*<link href='http://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>*/
+<link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+<style>
+
+body {
+  font-family: 'Open Sans', sans-serif !important;
+  font-size: 16px;
+}
+
+div.CodeMirror, div.output_area pre, div.output_wrapper, div.prompt {
+  font-family: 'Ubuntu Mono', monospace !important;
+  font-size: 16px;
+}
+
+/* INTRO PAGE */
+.toolbar_info, .list_container {
+  font-family: 'Open Sans', sans-serif !important;
+  font-size: 16px;
+}
+
+/* NOTEBOOK */
+div.output_html {font-family: 'Open Sans', sans-serif;}
+
+div.text_cell_render, div.output_html {
+  font-family: 'Open Sans', sans-serif !important;
+  font-size: 16px;
+}
+
+.cm-s-ipython .CodeMirror-cursor {
+  border: none !important;
+  width: 9px !important;
+  height: 18px !important;
+  background: rgba(0,0,0,0.3) !important;
+  /*background: rgba(247,247,247,0.7) !important;*/
+  /*background: rgba(10,150,10,0.7) !important;*/
+}
+
+.cm-s-ipython .CodeMirror-matchingbracket {
+  font-weight: bold !important;
+  color: #ff0000 !important;
+}
+
+
+.CodeMirror-dialog {
+  position: relative;
+  width: 100%;
+  color: black;
+  background-color: #F5F6CE;
+  opacity: 1;
+  z-index: 99;
+  padding: 11px 0px 0px 35px;
+}
+
+.CodeMirror-ruler {
+  border-left: 1px solid #cccccc;
+  z-index: 3;
+}
+
+.CodeMirror-activeline-background {background: #E4E4E4;}
+
+/* Theme color specs */
+
+</style>
