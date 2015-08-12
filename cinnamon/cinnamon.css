@@ -1696,6 +1696,7 @@ StScrollBar StButton#vhandle:hover
 
 
 .window-list-item-box:hover  {
+    color: #e6e6e6;
     background-color: #2e2e2e;
     /*box-shadow: inset 0px 0px 0px 1px rgba(120,120,120,0.5);*/
 }
