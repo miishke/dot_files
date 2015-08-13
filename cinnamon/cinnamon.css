@@ -421,10 +421,40 @@ StScrollBar StButton#vhandle:hover
 }
 
 /* ===================================================================
- * Overview
+ * Overview / Scale
  * ===================================================================*/
 
-#overview {
+.workspace-overview-background-shade {
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+.window-caption {
+  border-image: url("expo-scale-assets/window-name.svg") 6;
+  color: white;
+  font-size: 9pt;
+  font-weight: bold;
+  padding: 6px 8px;
+  spacing: 25px;
+  -cinnamon-caption-spacing: 10px;
+}
+
+.window-caption#selected {
+  border-image: url("expo-scale-assets/window-name-focused.svg") 6;
+  color: white;
+}
+
+.window-close {
+  background-image: url("widget-assets/close.svg");
+  height: 41px;
+  width: 41px;
+  -cinnamon-close-overlap: 22px;
+}
+
+.window-close:hover {
+  background-image: url("widget-assets/close-hover.svg");
+}
+
+/*#overview {
     spacing: 12px;
 }
 
@@ -441,7 +471,7 @@ StScrollBar StButton#vhandle:hover
 }
 
 .workspace-controls {
-    visible-height: 32px; /* Amount visible before hovering */
+    visible-height: 32px;
 }
 
 .workspace-thumbnails-background {
@@ -537,12 +567,6 @@ StScrollBar StButton#vhandle:hover
     text-align: center;
 }
 
-.expo-background {
-  background-gradient-start: #000;
-  background-gradient-end: #AAA;
-  background-gradient-direction: vertical
-}
-
 .workspace-overview-background-shade {
   background-color: rgba(0,0,0,0.4);
 }
@@ -555,7 +579,7 @@ StScrollBar StButton#vhandle:hover
 .expo-workspace-thumbnail-frame#active {
   border: 2px, rgba(32,32,32,0.9);
   background-color: rgba(32,32,32,0.9);
-}
+}*/
 
 /* ===================================================================
 * Desklets (desklet.js)
@@ -1657,8 +1681,6 @@ StScrollBar StButton#vhandle:hover
 .window-list-box {
     font-weight: bold;
     spacing: 0px;
-/*    spacing: 3px;
-    padding-top: 1px;*/
 }
 
 .window-list-item-label {
@@ -1669,11 +1691,6 @@ StScrollBar StButton#vhandle:hover
 
 .window-list-item-box {
     color: #a4a4a4;
-    /*color: rgba(255,255,255,1.0);*/
-/*	background-gradient-direction: vertical;
-	background-gradient-start: rgba(100,100,100,0.5);
-	background-gradient-end: rgba(50,50,50,0.5);
-	box-shadow: inset 0px 0px 0px 1px rgba(80,80,80,0.5);*/
     border-radius: 6px 6px 6px 6px;
     padding: 1px;
     padding-left: 5px;
@@ -1687,18 +1704,11 @@ StScrollBar StButton#vhandle:hover
     color: #ffffff;
     background-color: #1c1c1c;
     font-weight: bold;
-/*    background-gradient-direction: vertical;
-    background-gradient-start: rgba(220,220,220,0.5);
-    background-gradient-end: rgba(70,70,70,0.5);
-    box-shadow: inset 0px 0px 0px 1px rgba(100,100,100,0.5);
-    border-radius: 4px 4px 0px 0px;*/
 }
-
 
 .window-list-item-box:hover  {
     color: #e6e6e6;
     background-color: #2e2e2e;
-    /*box-shadow: inset 0px 0px 0px 1px rgba(120,120,120,0.5);*/
 }
 
 .window-list-item-demands-attention {
@@ -1956,40 +1966,94 @@ StScrollBar StButton#vhandle:hover
  * Workspace OSD
  * ===================================================================*/
 
-.workspace-osd {
-	color: #ffffff;
-	text-shadow: black 5px 5px 5px;
-	font-weight: bold;
-	font-size: 48pt;
+.expo-background {
+    background: #282828 url("expo-scale-assets/noise.svg");
+    background-repeat: repeat;
+}
+
+.expo-workspace-thumbnail-frame {
+    border: 5px transparent;
+    border-image: url("expo-scale-assets/workspace-shadow.svg") 6;
+}
+
+.expo-workspace-thumbnail-frame#active {
+    border: 5px transparent;
+    border-image: url("expo-scale-assets/workspace-shadow.svg") 6;
+}
+
+.workspace-thumbnails {
+    spacing: 26px;
+    padding-left: 10px;
+    padding-right: 9px;
+}
+
+/* This shades the workspace thumbnails */
+.workspace-thumbnails .workspace-overview-background-shade {
+    background-color: transparent;
 }
 
 .expo-workspaces-name-entry {
-	padding: 5px;
-	border-radius: 4px;
-	color: rgb(128, 128, 128);
-	border: 2px solid rgb(136,138,133);
-	background-gradient-start: rgb(200,200,200);
-	background-gradient-end: white;
-	background-gradient-direction: vertical;
-	selected-color: black;
-	caret-color: rgb(128, 128, 128);
-	caret-size: 1px;
-	width: 250px;
-	height: 15px;
-	box-shadow: inset 0px 2px 4px rgba(0,0,0,0.6);
-	text-align: center;
+    border-image: url("expo-scale-assets/workspace-name.svg") 6;
+    height: 15px;
+    padding: 6px 12px 10px 12px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
 }
 
 .expo-workspaces-name-entry#selected {
-	background-gradient-start: rgb(128,128,128);
-	background-gradient-end: black;
-	color: rgb(200, 200, 200);
+    border-image: url("expo-scale-assets/workspace-name-focused.svg") 6;
+    color: white;
 }
 
-.expo-workspaces-name-entry:focus {
-	color: rgb(64, 64, 64);
-	font-weight: bold;
-	transition-duration: 300;
+.expo-workspaces-name-entry:focus,
+.expo-workspaces-name-entry#selected:focus {
+    border-image: url("expo-scale-assets/workspace-name-pressed.svg") 7;
+    color: white;
+    selected-color: white;
+    caret-color: white;
+    caret-size: 2px;
+    selection-background-color: #3e7ab6;
+}
+
+.workspace-close-button {
+    background-image: url("widget-assets/close.svg");
+    height: 41px;
+    width: 41px;
+    -cinnamon-close-overlap: 28px;
+}
+
+.workspace-close-button:hover {
+  background-image: url("widget-assets/close-hover.svg");
+}
+
+.workspace-add-button {
+    border-image: url("expo-scale-assets/add-workspace-bg.svg") 6;
+    background-image: url("expo-scale-assets/plus.svg");
+    background-size: 25px 24px;
+    height: 200px;
+    width: 35px;
+}
+
+.workspace-add-button:hover {
+    border-image: url("expo-scale-assets/add-workspace-bg.svg") 6;
+    background-image: url("expo-scale-assets/plus-hover.svg");
+}
+
+.window-close-area {
+    border-image: url("expo-scale-assets/workspace-close-area-bg.svg") 9;
+    background-image: url("expo-scale-assets/trash.svg");
+    height: 100px;
+    width: 350px;
+}
+
+.workspace-osd {
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #464646;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 48pt;
 }
 
 /* ===================================================================
