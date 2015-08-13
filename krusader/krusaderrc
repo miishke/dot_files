@@ -1,0 +1,306 @@
+First Time=false
+Version=2.4.0-beta3
+
+[Archives]
+Supported Packers=tar,gzip,bzip2,lzma,xz,unzip,zip,cpio,unrar,dpkg
+
+[Colors]
+Current Foreground=0,0,255
+KDE Default=false
+Marked Background=192,255,192
+Marked Current Foreground=
+Marked Foreground=0,0,0
+Quicksearch Match Background=192,255,192
+Statusbar Background Active=192,255,192
+Statusbar Foreground Active=0,0,0
+
+[Custom Selection Mode]
+Immediate Context Menu=false
+Left Selects=false
+Right Preserves=true
+ShiftCtrl Left Selects=true
+Space Moves Down=false
+
+[Dependencies]
+bzip2=/bin/bzip2
+checksum utility=/usr/bin/md5sum
+cpio=/bin/cpio
+dpkg=/usr/bin/dpkg
+gzip=/bin/gzip
+kdesu=/usr/lib/kde4/libexec/kdesu
+krusader=/usr/bin/krusader
+locate=/usr/bin/locate
+lzma=/usr/bin/lzma
+mailer=/usr/bin/thunderbird
+md5sum=/usr/bin/md5sum
+mount=/bin/mount
+sha1sum=/usr/bin/sha1sum
+sha224sum=/usr/bin/sha224sum
+sha256sum=/usr/bin/sha256sum
+sha384sum=/usr/bin/sha384sum
+sha512sum=/usr/bin/sha512sum
+tar=/bin/tar
+thunderbird=/usr/bin/thunderbird
+umount=/bin/umount
+unrar=/usr/bin/unrar
+unzip=/usr/bin/unzip
+updatedb=/usr/bin/updatedb
+xz=/usr/bin/xz
+zip=/usr/bin/zip
+
+[General]
+Editor=subl -n -w
+Terminal=gnome-terminal
+
+[HTML Settings]
+AutomaticDetectionLanguage=1
+
+[KPropertiesDialog]
+Height 1005=452
+Width 1280=306
+
+[Kate Document Defaults]
+Allow End of Line Detection=true
+Allow Simple Mode=true
+BOM=false
+Backup Flags=0
+Backup Prefix=
+Backup Suffix=~
+Encoding=UTF-8
+End of Line=0
+Indent On Backspace=false
+Indent On Tab=true
+Indent On Text Paste=false
+Indentation Mode=normal
+Indentation Width=2
+Keep Extra Spaces=false
+Line Length Limit=4096
+Newline At EOF=false
+No sync=false
+On-The-Fly Spellcheck=false
+Overwrite Mode=false
+PageUp/PageDown Moves Cursor=false
+Remove Spaces=0
+ReplaceTabsDyn=false
+Search Dir Config Depth=9
+Show Spaces=true
+Show Tabs=true
+Smart Home=true
+Tab Handling=2
+Tab Width=8
+Word Wrap=false
+Word Wrap Column=80
+
+[Kate Part Defaults]
+Encoding Prober Type=1
+Fallback Encoding=ISO-8859-15
+
+[Kate Renderer Defaults]
+Animate Bracket Matching=true
+Schema=KDE
+Show Indentation Lines=false
+Show Whole Bracket Expression=true
+Word Wrap Marker=false
+
+[Kate Vi Input Mode Settings]
+Command Mode Mapping Keys=
+Command Mode Mappings=
+Command Mode Mappings Recursion=
+Insert Mode Mapping Keys=
+Insert Mode Mappings=
+Insert Mode Mappings Recursion=
+Macro Completions=
+Macro Contents=
+Macro Registers=
+Normal Mode Mapping Keys=
+Normal Mode Mappings=
+Normal Mode Mappings Recursion=
+Visual Mode Mapping Keys=
+Visual Mode Mappings=
+Visual Mode Mappings Recursion=
+
+[Kate View Defaults]
+Allow Mark Menu=true
+Auto Center Lines=0
+Auto Completion=true
+Bookmark Menu Sorting=0
+Default Mark Type=1
+Dynamic Word Wrap=true
+Dynamic Word Wrap Align Indent=80
+Dynamic Word Wrap Indicators=1
+Fold First Line=false
+Folding Bar=true
+Icon Bar=false
+Keyword Completion=true
+Line Modification=false
+Line Numbers=true
+Maximum Search History Size=100
+Persistent Selection=false
+Replacement Text History=
+Scroll Bar Marks=false
+Scroll Bar Mini Map=true
+Scroll Bar Mini Map All=false
+Scroll Bar Mini Map Width=100
+Scroll Past End=false
+Search Pattern History=
+Search/Replace Flags=140
+Show Scrollbars=1
+Smart Copy Cut=false
+Vi Input Mode=false
+Vi Input Mode Emulate Command Bar=false
+Vi Input Mode Steal Keys=false
+Vi Relative Line Numbers=false
+Word Completion=true
+Word Completion Minimal Word Length=3
+Word Completion Remove Tail=true
+
+[Konfigurator]
+Window Height=680
+Window Maximized=false
+Window Width=900
+
+[KrViewerWindow]
+Window Height=700
+Window Maximized=false
+Window Width=900
+
+[Locate]
+Case Sensitive=false
+Don't Search In Path=false
+Existing Files=false
+Search For=.bashrc
+
+[Look&Feel]
+Back Button Visible=false
+Bookmarks Button Visible=false
+Filelist Font=Noto Sans UI,10,-1,5,50,0,0,0,0,0
+Forward Button Visible=false
+History Button Visible=false
+Home Button Visible=true
+Media Button Visible=false
+Mouse Selection=2
+Panel Toolbar visible=true
+Show Tab Buttons=false
+Tab Bar Position=bottom
+
+[Private]
+Left PanelPopup Splitter Sizes=136,530
+Maximized=false
+PopularUrls=file:///usr/share/themes/Linux Mint/cinnamon/,file:///usr/share/themes/Linux Mint/cinnamon/,file:///home/mmvb/repos/dot_files/cinnamon/widget-assets/,file:///home/mmvb/repos/dot_files/cinnamon/expo-scale-assets/,file:///home/mmvb/repos/dot_files/cinnamon/,file:///home/mmvb/Documents/,file:///home/mmvb/Pictures/,file:///home/mmvb/repos/dot_files/cinnamon/mm_icons/,file:///usr/share/themes/Linux Mint/cinnamon/expo-scale-assets/,file:///usr/share/themes/Linux Mint/cinnamon/,file:///usr/share/themes/Linux Mint/cinnamon/widget-assets/,file:///home/mmvb/Pictures/mm_icons/,file:///home/mmvb/.themes/Zukitwo-Cinnamon/cinnamon/,file:///home/mmvb/.themes/Zukitwo-Cinnamon/cinnamon/expo-scale-assets/,file:///home/mmvb/.themes/Zukitwo-Cinnamon/,file:///home/mmvb/,file:///usr/share/themes/Linux Mint/cinnamon/,file:///usr/share/,file:///usr/,file:///,file:///usr/share/themes/Linux Mint/,file:///home/mmvb/.themes/,file:///home/mmvb/.themes/Numix-Cinnamon/,file:///home/mmvb/.themes/Numix-Cinnamon/cinnamon/,file:///usr/share/themes/,file:///home/mmvb/Documents/MMetal/,file:///usr/share/themes/Mint-X-Blue/,file:///usr/share/themes/Mint-X-Blue/cinnamon/,file:///usr/share/themes/Mint-X-Blue/xfwm4/,file:///usr/share/themes/Linux Mint/
+PopularUrlsRank=17,12,7,5,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Right PanelPopup Splitter Sizes=342,360
+Start Position=44,-8
+Start Size=1125,850
+cmdline history=
+
+[Protocols]
+Handled Protocols=krarc,iso,tar
+Mimes For iso=application/x-iso,application/x-cd-image,application/x-dvd-image
+Mimes For krarc=application/x-7z,application/x-7z-compressed,application/x-ace,application/x-ace-compressed,application/x-arj,application/x-arj-compressed,application/x-bzip2,application/x-cpio,application/x-deb,application/x-debian-package,application/x-gzip,application/x-jar,application/x-lha,application/x-lha-compressed,application/x-rar,application/x-rar-compressed,application/x-xz,application/x-rpm,application/zip,application/x-zip,application/x-zip-compressed
+Mimes For tar=application/x-tar,application/x-tarz,application/x-bzip-compressed-tar,application/x-compressed-tar,application/x-tbz,application/x-tgz,application/x-xz-compressed-tar
+
+[QueueManager]
+Active=0
+Queues=default
+
+[Startup]
+Left Side Is Active=true
+Show Cmd Line=false
+Show FN Keys=false
+Show Terminal Emulator=false
+Show actions tool bar=false
+Show status bar=false
+Show tool bar=false
+Splitter Sizes=560,559
+Start To Tray=false
+UI Save Settings=true
+Vertical Mode=false
+
+[Startup][Left Tab Bar]
+ActiveTab=0
+
+[Startup][Left Tab Bar][Tabs][Tab0]
+Properties=0
+Type=0
+Url=/usr/share/themes/Linux Mint/cinnamon
+
+[Startup][Left Tab Bar][Tabs][Tab0][History]
+CurrentIndex=0
+CurrentItems=cinnamon.css,..,widget-assets,..,expo-scale-assets,..,expo-scale-assets,..,widget-assets,cinnamon,..,cinnamon,Linux Mint
+Entrys=file:///usr/share/themes/Linux%20Mint/cinnamon,file:///usr/share/themes/Linux%20Mint/cinnamon/widget-assets,file:///usr/share/themes/Linux%20Mint/cinnamon,file:///usr/share/themes/Linux%20Mint/cinnamon/expo-scale-assets,file:///usr/share/themes/Linux%20Mint/cinnamon,file:///usr/share/themes/Linux%20Mint/cinnamon/expo-scale-assets,file:///usr/share/themes/Linux%20Mint/cinnamon,file:///usr/share/themes/Linux%20Mint/cinnamon/widget-assets,file:///usr/share/themes/Linux%20Mint/cinnamon,file:///usr/share/themes/Linux%20Mint,file:///usr/share/themes/Linux%20Mint/cinnamon,file:///usr/share/themes/Linux%20Mint,file:///usr/share/themes
+
+[Startup][Left Tab Bar][Tabs][Tab0][View]
+AutoResizeColumns=true
+Descending Sort Order=0
+Filter=3
+FilterApplysToDirs=false
+IconSize=22
+Saved State=\x00\x00\x00ˇ\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\t®\x01\x00\x00\x00\x04\x00\x00\x00\x08\x00\x00\x00d\x00\x00\x00\x07\x00\x00\x00d\x00\x00\x00\x05\x00\x00\x00d\x00\x00\x00\x03\x00\x00\x00d\x00\x00\x02 \x00\x00\x00\t\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00dˇˇˇˇ\x00\x00\x00Å\x00\x00\x00\x00\x00\x00\x00\t\x00\x00\x00¯\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x001\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00P\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00ä\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x1d\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00
+ShowPreviews=false
+Sort Column=0
+
+[Startup][Left Tab Bar][Tabs][Tab1]
+Properties=0
+Type=0
+Url=/home/mmvb/Pictures
+
+[Startup][Left Tab Bar][Tabs][Tab1][History]
+CurrentIndex=0
+CurrentItems=Home_004.png,maximize-focus.svg,mm_icons,Pictures,expo-scale-assets,..,expo-scale-assets,cinnamon,Zukitwo-Cinnamon,cinnamon,cinnamon.css,cinnamon,Numix-Cinnamon
+Entrys=file:///home/mmvb/Pictures,file:///home/mmvb/Pictures/mm_icons,file:///home/mmvb/Pictures,file:///home/mmvb,file:///home/mmvb/.themes/Zukitwo-Cinnamon/cinnamon,file:///home/mmvb/.themes/Zukitwo-Cinnamon/cinnamon/expo-scale-assets,file:///home/mmvb/.themes/Zukitwo-Cinnamon/cinnamon,file:///home/mmvb/.themes/Zukitwo-Cinnamon,file:///home/mmvb/.themes,file:///home/mmvb/.themes/Numix-Cinnamon,file:///home/mmvb/.themes/Numix-Cinnamon/cinnamon,file:///home/mmvb/.themes/Numix-Cinnamon,file:///home/mmvb/.themes
+
+[Startup][Left Tab Bar][Tabs][Tab1][View]
+AutoResizeColumns=true
+Descending Sort Order=0
+Filter=3
+FilterApplysToDirs=false
+IconSize=22
+Saved State=\x00\x00\x00ˇ\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x04\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\t®\x01\x00\x00\x00\x04\x00\x00\x00\x08\x00\x00\x00d\x00\x00\x00\x07\x00\x00\x00d\x00\x00\x00\x05\x00\x00\x00d\x00\x00\x00\x03\x00\x00\x00d\x00\x00\x01›\x00\x00\x00\t\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00dˇˇˇˇ\x00\x00\x00Å\x00\x00\x00\x00\x00\x00\x00\t\x00\x00\x00À\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x002\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00P\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00r\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x1e\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00
+ShowPreviews=false
+Sort Column=4
+
+[Startup][Right Tab Bar]
+ActiveTab=1
+
+[Startup][Right Tab Bar][Tabs][Tab0]
+Properties=0
+Type=0
+Url=/home/mmvb/Documents
+
+[Startup][Right Tab Bar][Tabs][Tab0][History]
+CurrentIndex=0
+CurrentItems=..,..,MMetal,Documents,..,.gconf,apps,gnome-terminal,profiles,Default,%gconf.xml,Default,profiles
+Entrys=file:///home/mmvb/Documents,file:///home/mmvb/Documents/MMetal,file:///home/mmvb/Documents,file:///home/mmvb,file:///home/mmvb/.gconf,file:///home/mmvb,file:///home/mmvb/.gconf,file:///home/mmvb/.gconf/apps,file:///home/mmvb/.gconf/apps/gnome-terminal,file:///home/mmvb/.gconf/apps/gnome-terminal/profiles,file:///home/mmvb/.gconf/apps/gnome-terminal/profiles/Default,file:///home/mmvb/.gconf/apps/gnome-terminal/profiles,file:///home/mmvb/.gconf/apps/gnome-terminal
+
+[Startup][Right Tab Bar][Tabs][Tab0][View]
+AutoResizeColumns=true
+Descending Sort Order=0
+Filter=3
+FilterApplysToDirs=false
+IconSize=22
+Saved State=\x00\x00\x00ˇ\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\t®\x01\x00\x00\x00\x04\x00\x00\x00\x08\x00\x00\x00d\x00\x00\x00\x07\x00\x00\x00d\x00\x00\x00\x05\x00\x00\x00d\x00\x00\x00\x03\x00\x00\x00d\x00\x00\x026\x00\x00\x00\t\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00dˇˇˇˇ\x00\x00\x00Å\x00\x00\x00\x00\x00\x00\x00\t\x00\x00\x01\x1f\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x001\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00P\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00y\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x1d\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00
+ShowPreviews=false
+Sort Column=0
+
+[Startup][Right Tab Bar][Tabs][Tab1]
+Properties=0
+Type=0
+Url=/home/mmvb/repos/dot_files/cinnamon
+
+[Startup][Right Tab Bar][Tabs][Tab1][History]
+CurrentIndex=0
+CurrentItems=widget-assets,..,widget-assets,..,expo-scale-assets,..,mm_icons,..,mm_icons,..,mm_icons,cinnamon,dot_files
+Entrys=file:///home/mmvb/repos/dot_files/cinnamon,file:///home/mmvb/repos/dot_files/cinnamon/widget-assets,file:///home/mmvb/repos/dot_files/cinnamon,file:///home/mmvb/repos/dot_files/cinnamon/expo-scale-assets,file:///home/mmvb/repos/dot_files/cinnamon,file:///home/mmvb/repos/dot_files/cinnamon/mm_icons,file:///home/mmvb/repos/dot_files/cinnamon,file:///home/mmvb/repos/dot_files/cinnamon/mm_icons,file:///home/mmvb/repos/dot_files/cinnamon,file:///home/mmvb/repos/dot_files/cinnamon/mm_icons,file:///home/mmvb/repos/dot_files/cinnamon,file:///home/mmvb/repos/dot_files,file:///home/mmvb/repos
+
+[Startup][Right Tab Bar][Tabs][Tab1][View]
+AutoResizeColumns=true
+Descending Sort Order=0
+Filter=3
+FilterApplysToDirs=false
+IconSize=22
+Saved State=\x00\x00\x00ˇ\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x04\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\t®\x01\x00\x00\x00\x04\x00\x00\x00\x08\x00\x00\x00d\x00\x00\x00\x07\x00\x00\x00d\x00\x00\x00\x05\x00\x00\x00d\x00\x00\x00\x03\x00\x00\x00d\x00\x00\x02-\x00\x00\x00\t\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00dˇˇˇˇ\x00\x00\x00Å\x00\x00\x00\x00\x00\x00\x00\t\x00\x00\x01\x1b\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x002\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00P\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00r\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x1e\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00
+ShowPreviews=false
+Sort Column=4
+
+[ViewerModule]
+FirstRun=false
