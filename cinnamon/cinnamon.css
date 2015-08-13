@@ -868,11 +868,11 @@ StScrollBar StButton#vhandle:hover
     font-size: 10pt;
     border-radius: 8px;
     background-color: #3f3f3f;
+    color: #babdb6;
 /*    background-gradient-direction: vertical;
     background-gradient-start: rgba(70,70,70,1);
     background-gradient-end: rgba(50,50,50,1);
     box-shadow: 0px 0px 12px 6px rgba(0,0,0,1);*/
-    color: #babdb6;
 
     padding-right: 42px;
     padding-left: 42px;
@@ -953,7 +953,49 @@ StScrollBar StButton#vhandle:hover
  * Run dialog
  * ===================================================================*/
 
+.run-dialog > * {
+    border-image: url("background-assets/popup.svg") 7;
+    padding: 10px;
+}
+
+.run-dialog > .modal-dialog-button-box {
+    background-color: transparent;
+    border-image: none;
+    box-shadow: none;
+    padding: 0;
+    height: 0;
+}
+
+.run-dialog-error-box {
+    padding: 10px 2px 2px 2px;
+    spacing: 5px;
+}
+
+.run-dialog-completion-box {
+    font-size: 12px;
+    color: black;
+}
+
 .run-dialog-label {
+    font-size: 0;
+}
+
+.run-dialog-entry {
+    font-size: 10.5pt;
+    font-weight: bold;
+    width: 23em;
+    color: black;
+    selection-background-color: #a4a4a4;
+    selected-color: black;
+    caret-size: 1.5px;
+}
+
+.lightbox {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+/*Working version with "Please enter a command:" prompt*/
+/*.run-dialog-label {
     font-size: 9pt;
     color: white;
 }
@@ -993,7 +1035,7 @@ StScrollBar StButton#vhandle:hover
 
 .lightbox {
     background-color: rgba(0, 0, 0, 0.3);
-}
+}*/
 
 /* ===================================================================
  * End session dialog
