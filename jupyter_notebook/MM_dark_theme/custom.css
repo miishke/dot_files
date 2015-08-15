@@ -1,0 +1,210 @@
+/*Set fonts*/
+<link href='http://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
+
+<style>
+
+body {
+  font-family: 'Noto Sans', sans-serif !important;
+  font-size: 14px;
+}
+
+div.CodeMirror, div.output_area pre, div.output_wrapper, div.prompt {
+  font-family: 'Source Code Pro', monospace !important;
+  font-size: 15px;
+}
+
+/*GLOBALS*/
+body {
+  background-color: #2b303b;
+}
+
+/*INTRO PAGE*/
+.toolbar_info, .list_container {
+  font-family: 'Noto Sans', sans-serif !important;
+  font-size: 12px;
+}
+
+/*set tabs & table color*/
+div.tab-content{
+  background-color: #ffffff;
+}
+
+/*fill in gap b/ween tabs & table*/
+ul#tabs {
+  margin-bottom: 0px;
+}
+
+/*outline tabs*/
+.nav-tabs > li > a {
+  margin-right: 2px;
+  line-height: 1.4;
+  border: 1px solid;
+  border-radius: 4px 4px 0 0;
+}
+
+/*pad files info text*/
+#notebook_toolbar > div.col-sm-8.no-padding {
+  padding-left: 8px;
+}
+
+/*pad file tab reload button*/
+#notebook_toolbar > div.col-sm-4.no-padding.tree-buttons > div.pull-right{
+  margin-right: 7px;
+}
+
+/*pad running tab info text*/
+#running_toolbar > div.col-sm-8.no-padding{
+  padding-left: 8px;
+}
+
+/*pad running tab reload button*/
+#running_toolbar > div.col-sm-4.no-padding.tree-buttons{
+  padding-top: 2px;
+  padding-right: 8px;
+}
+
+/*pad cluster tab info text*/
+#cluster_toolbar > div.col-xs-8.no-padding{
+  padding-left: 8px;
+}
+
+/*pad cluster tab reload button*/
+#cluster_toolbar > div.col-xs-4.no-padding.tree-buttons{
+  padding-top: 2px;
+  padding-right: 8px;
+}
+
+/* NOTEBOOK*/
+
+#site {
+  background-color: #2b303b;
+}
+
+#notebook-container{
+  background-color: #303540;
+  box-shadow: none;
+  webkit-box-shadow: none;
+}
+
+div.output_html {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+div.text_cell_render, div.output_html {
+  font-family: 'Noto Sans', sans-serif !important;
+  font-size: 14px;
+}
+
+div.input_area {
+  border: none;
+}
+
+div.cell.selected {
+  border-color: #ababab;
+}
+
+div.input_prompt {
+  color: #ab7967;
+}
+
+div.output_prompt {
+  color: #b48ead;
+}
+
+div.output_area pre {
+  font-weight: normal;
+  color: #c0c5ce;
+}
+
+.rendered_html table, .rendered_html th, .rendered_html tr, .rendered_html td {
+  border: 1px  #c0c5ce solid;
+  color: #c0c5ce;
+}
+
+.rendered_html code{
+  border-width: 0px;
+  background-color: #c0c5ce;;
+  color: #2b303b;
+  font-size: 100%;
+  padding: 1px;
+}
+
+div.output_html {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+table.dataframe tr {
+  border: 1px #c0c5ce;
+}
+
+.edit_mode div.cell.selected {
+  border-color: #b48ead;
+}
+
+div.text_cell_render, div.output_html {
+  color: #c0c5ce;
+  font-family: 'Noto Sans', sans-serif !important;
+  font-size: 14px;
+}
+
+div.output_stderr {background-color: #bf616a;}
+div.output_stderr pre {color: #dfe1e8;}
+
+.cm-s-ipython.CodeMirror {background: #2b303b; color: #dfe1e8;}
+.cm-s-ipython div.CodeMirror-selected {background: #555f69 !important;}
+.cm-s-ipython .CodeMirror-gutters {background: #2b303b; border-right: 0px;}
+.cm-s-ipython .CodeMirror-linenumber {color: #65737e;}
+
+.cm-s-ipython .CodeMirror-cursor {
+  border: none !important;
+  width: 9px !important;
+  height: 18px !important;
+  background: rgba(0,180,0,0.5) !important;
+}
+
+.cm-s-ipython .CodeMirror-matchingbracket {
+  font-weight: bold !important;
+  color: #00ffff !important;
+}
+
+span.ansiblack {color: #343d46;}
+span.ansiblue {color: #96b5b4;}
+span.ansigray {color: #a7adba;}
+span.ansigreen {color: #a3be8c;}
+span.ansipurple {color: #b48ead;}
+span.ansired {color: #bf616a;}
+span.ansiyellow {color: #ebcb8b;}
+
+.cm-s-ipython span.cm-property, .cm-s-ipython span.cm-attribute {
+  color: #a3be8c;
+}
+.cm-s-ipython span.cm-comment {color: #8c8c8c; font-style: normal;}
+.cm-s-ipython span.cm-atom {color: #a16a94;}
+.cm-s-ipython span.cm-number {color: #dc9656;}
+.cm-s-ipython span.cm-keyword {color: #ab4642;}
+.cm-s-ipython span.cm-string {color: #a1b56c;}
+.cm-s-ipython span.cm-operator {color: #bc9458;}
+.cm-s-ipython span.cm-builtin {color: #b3588e;}
+.cm-s-ipython span.cm-meta {color: #6a9fb5;}
+.cm-s-ipython span.cm-variable {color: #bbc0c9;}
+.cm-s-ipython span.cm-variable-2 {color: #6699cc;}
+.cm-s-ipython span.cm-def {color: #477ca1;}
+.cm-s-ipython span.cm-bracket {color: #c0c5ce;}
+.cm-s-ipython span.cm-tag {color: #f2777a;}
+.cm-s-ipython span.cm-link {color: #a16a94;}
+.cm-s-ipython span.cm-error {
+  background: #f2777a;
+  color: #000000;
+}
+
+.CodeMirror-ruler {
+  border-left: 2px solid #303540;
+  z-index: 3;
+}
+
+.CodeMirror-activeline-background {
+  background: #303540;
+}
+
+</style>
