@@ -1,8 +1,6 @@
 /*
 
-mm-dark theme is inspired by ocean-dark by Chris Kempson
-[http://chriskempson.github.io/base16/] and its IPython/Jupyter notebook
-implementation by Nikhil S. [https://github.com/nsonnad/base16-ipython-notebook]
+mm-dark theme is inspired by ocean-dark by Chris Kempson [https://github.com/chriskempson/base16] and its IPython/Jupyter notebook implementation by Nikhil Sonnad [https://github.com/nsonnad/base16-ipython-notebook] based on CodeMirror template by Jan T. Sott [https://github.com/idleberg/base16-chrome-devtools].
 
 Author: Milos Miljkovic
 https://github.com/miishke/mm_dark
@@ -10,7 +8,7 @@ Lincense: BSD
 
 */
 
-/*Set fonts ========================================*/
+/*Set fonts =================================================================*/
 <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
 
@@ -26,12 +24,12 @@ div.CodeMirror, div.output_area pre, div.output_wrapper, div.prompt {
   font-size: 15px;
 }
 
-/*Global setting ========================================*/
+/*Global setting ============================================================*/
 body {
   background-color: #2b303b;
 }
 
-/*Landing page ========================================*/
+/*Landing page ==============================================================*/
 .toolbar_info, .list_container {
   font-family: 'Noto Sans', sans-serif !important;
   font-size: 12px;
@@ -87,7 +85,7 @@ ul#tabs {
   padding-right: 8px;
 }
 
-/*Notebook ========================================*/
+/*Notebook ==================================================================*/
 
 #site {
   background-color: #2b303b;
@@ -206,7 +204,7 @@ div.text_cell_render, div.output_html {
 div.output_stderr {background-color: #f2777a;}
 div.output_stderr pre {color: #2e2e2e;}
 
-/*CodeMirror styling ========================================*/
+/*CodeMirror styling ========================================================*/
 .cm-s-ipython.CodeMirror {background: #2b303b; color: #dfe1e8;}
 .cm-s-ipython div.CodeMirror-selected {background: #555f69 !important;}
 .cm-s-ipython .CodeMirror-gutters {background: #2b303b; border-right: 0px;}
@@ -237,7 +235,7 @@ span.ansicyan{color: ##04b4ae}
 span.ansigray {color: #a7adba;}
 
 .cm-s-ipython span.cm-property, .cm-s-ipython span.cm-attribute {
-  color: #a3be8c;
+  color: #bbc0c9;
 }
 .cm-s-ipython span.cm-comment {color: #8c8c8c; font-style: normal;}
 .cm-s-ipython span.cm-atom {color: #a16a94;}
