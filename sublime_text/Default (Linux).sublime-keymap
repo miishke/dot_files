@@ -1,6 +1,13 @@
 [
+    // Toggle line wrapping
     { "keys": ["alt+q"], "command": "toggle_setting", "args": {"setting": "word_wrap"} },
+
+    // Toggle side bar
     { "keys": ["ctrl+b"], "command": "toggle_side_bar" },
+
+    // Toggle minimap
+    { "keys": ["alt+w"], "command": "toggle_minimap" },
+
     // Go to left bracket
     {
         "keys": ["ctrl+super+up"],
@@ -17,6 +24,7 @@
             }
         }
     },
+
     // Go to right bracket
     {
         "keys": ["ctrl+super+down"],
@@ -33,6 +41,7 @@
             }
         }
     },
+
         // Select text between brackets
     {
         "no_outside_adj": null,
@@ -48,6 +57,7 @@
             }
         }
     },
+
     // Select text including brackets
     {
         "keys": ["ctrl+super+o"],
@@ -64,6 +74,7 @@
             }
         }
     },
+
         // Select tag name of HTML/XML tag (both opening name and closing)
     {
         "keys": ["ctrl+alt+super+t"],
@@ -77,6 +88,7 @@
             }
         }
     },
+
     // Select the attribute to the right of the cursor (will wrap inside the tag)
     {
         "keys": ["ctrl+alt+super+right"],
@@ -91,6 +103,7 @@
             }
         }
     },
+
     // Select the attribute to the left of the cursor (will wrap inside the tag)
     {
         "keys": ["ctrl+alt+super+left"],
@@ -105,6 +118,7 @@
             }
         }
     },
+
     // Convert single quote string to double quoted string and vice versa
     // Will handle escaping or unescaping quotes within the string
     // Over-rides default "toggle_record_macro"
@@ -121,11 +135,13 @@
             }
         }
     },
+
         // Swap brackets with another type
     {
         "keys": ["ctrl+alt+e"],
         "command": "swap_brackets"
     },
+
     // Surround selection with brackets from quick panel
     {
         "keys": ["ctrl+alt+w"],
