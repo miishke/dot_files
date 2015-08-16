@@ -137,7 +137,7 @@ require([
             help : 'toggle menu bar',
             help_index : 'zz',
             handler : function (event) {
-                $('div#menubar-container.container').toggle();
+                $('div#menubar-container').toggle();
                 IPython.menubar._size_header()
                 return false;
             }
