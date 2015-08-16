@@ -1,4 +1,16 @@
-/*Set fonts*/
+/*
+
+mm-dark theme is inspired by ocean-dark by Chris Kempson
+[http://chriskempson.github.io/base16/] and its IPython/Jupyter notebook
+implementation by Nikhil S. [https://github.com/nsonnad/base16-ipython-notebook]
+
+Author: Milos Miljkovic
+https://github.com/miishke/mm_dark
+Lincense: BSD
+
+*/
+
+/*Set fonts ========================================*/
 <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
 
@@ -14,12 +26,12 @@ div.CodeMirror, div.output_area pre, div.output_wrapper, div.prompt {
   font-size: 15px;
 }
 
-/*GLOBALS*/
+/*Global setting ========================================*/
 body {
   background-color: #2b303b;
 }
 
-/*INTRO PAGE*/
+/*Landing page ========================================*/
 .toolbar_info, .list_container {
   font-family: 'Noto Sans', sans-serif !important;
   font-size: 12px;
@@ -75,7 +87,7 @@ ul#tabs {
   padding-right: 8px;
 }
 
-/* NOTEBOOK*/
+/*Notebook ========================================*/
 
 #site {
   background-color: #2b303b;
@@ -97,8 +109,7 @@ ul#tabs {
 .navbar-default {
   background-color: #ffffff;
   border: none;
-  /*border-color: #e7e7e7;*/
-/*  border-color: #ffffff;
+  /*border-color: #e7e7e7;
   border-width: 2px;*/
 }
 
@@ -110,16 +121,15 @@ ul#tabs {
 #kernel_indicator {
   float: right !important;
   float: right;
-  color: #00853e;
   margin-left: 5px;
   margin-right: 5px;
   width: 11px;
   z-index: 10;
   text-align: center;
   width: auto;
-  font-weight: bold;
   border: none;
   padding-right: 5px;
+  font-weight: bold;
 }
 
 div.output_html {
@@ -135,16 +145,8 @@ div.input_area {
   border: none;
 }
 
-div.cell.selected {
-  border-color: #ababab;
-}
-
 div.input_prompt {
   color: #ab7967;
-}
-
-div.output_prompt {
-  color: #b48ead;
 }
 
 div.output_area pre {
@@ -152,9 +154,30 @@ div.output_area pre {
   color: #c0c5ce;
 }
 
-.rendered_html table, .rendered_html th, .rendered_html tr, .rendered_html td {
-  border: 1px  #c0c5ce solid;
+div.output_prompt {
+  color: #b48ead;
+}
+
+div.cell.selected {
+  /*border-color: #ababab;*/
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  border-left: 4px solid #65737e;
+}
+
+.edit_mode div.cell.selected {
+  /*border-color: #b48ead;*/
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  border-left: 4px solid #477ca1;
+}
+
+div.text_cell_render, div.output_html {
   color: #c0c5ce;
+  font-family: 'Noto Sans', sans-serif !important;
+  font-size: 14px;
 }
 
 .rendered_html code{
@@ -165,16 +188,13 @@ div.output_area pre {
   padding: 1px;
 }
 
-div.output_html {
-  font-family: 'Noto Sans', sans-serif;
+.rendered_html table, .rendered_html th, .rendered_html tr, .rendered_html td {
+  border: 1px  #c0c5ce solid;
+  color: #c0c5ce;
 }
 
 table.dataframe tr {
   border: 1px #c0c5ce;
-}
-
-.edit_mode div.cell.selected {
-  border-color: #b48ead;
 }
 
 div.text_cell_render, div.output_html {
@@ -183,33 +203,38 @@ div.text_cell_render, div.output_html {
   font-size: 14px;
 }
 
-div.output_stderr {background-color: #bf616a;}
-div.output_stderr pre {color: #dfe1e8;}
+div.output_stderr {background-color: #f2777a;}
+div.output_stderr pre {color: #2e2e2e;}
 
+/*CodeMirror styling ========================================*/
 .cm-s-ipython.CodeMirror {background: #2b303b; color: #dfe1e8;}
 .cm-s-ipython div.CodeMirror-selected {background: #555f69 !important;}
 .cm-s-ipython .CodeMirror-gutters {background: #2b303b; border-right: 0px;}
 .cm-s-ipython .CodeMirror-linenumber {color: #65737e;}
 
+/*styling for block cursor to match theme colors*/
 .cm-s-ipython .CodeMirror-cursor {
   border: none !important;
   width: 9px !important;
   height: 18px !important;
-  background: rgba(0,180,0,0.5) !important;
+  background: rgba(255,255,255,0.35) !important;
 }
 
+/*styling for matching brackets to make them stand out*/
 .cm-s-ipython .CodeMirror-matchingbracket {
   font-weight: bold !important;
   color: #00ffff !important;
 }
 
+/*CodeMirror color styling*/
 span.ansiblack {color: #343d46;}
-span.ansiblue {color: #96b5b4;}
-span.ansigray {color: #a7adba;}
+span.ansired {color: #ab4642;}
 span.ansigreen {color: #a3be8c;}
-span.ansipurple {color: #b48ead;}
-span.ansired {color: #bf616a;}
 span.ansiyellow {color: #ebcb8b;}
+span.ansiblue {color: #477ca1;}
+span.ansipurple {color: #a16a94;}
+span.ansicyan{color: ##04b4ae}
+span.ansigray {color: #a7adba;}
 
 .cm-s-ipython span.cm-property, .cm-s-ipython span.cm-attribute {
   color: #a3be8c;
@@ -230,14 +255,16 @@ span.ansiyellow {color: #ebcb8b;}
 .cm-s-ipython span.cm-link {color: #a16a94;}
 .cm-s-ipython span.cm-error {
   background: #f2777a;
-  color: #000000;
+  color: #2e2e2e;
 }
 
+/*styling for ruler to match theme colors*/
 .CodeMirror-ruler {
   border-left: 2px solid #303540;
   z-index: 3;
 }
 
+/*styling for active line to match theme colors*/
 .CodeMirror-activeline-background {
   background: #303540;
 }

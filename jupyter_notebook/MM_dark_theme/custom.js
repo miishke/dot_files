@@ -60,12 +60,12 @@ $([IPython.events]).on('edit_mode.Cell', function (event, data) {
 });
 
 require([
-     'base/js/namespace',
-     'base/js/events',
-     'codemirror/addon/search/search',
-     'codemirror/addon/search/searchcursor',
-     'codemirror/addon/dialog/dialog',
-     'codemirror/addon/selection/active-line'
+    'base/js/namespace',
+    'base/js/events',
+    'codemirror/addon/search/search',
+    'codemirror/addon/search/searchcursor',
+    'codemirror/addon/dialog/dialog',
+    'codemirror/addon/selection/active-line'
 ], $([IPython.events]).on('app_initialized.NotebookApp', function() {
 
         IPython.CodeCell.options_default.cm_config.autoCloseBrackets = false;
@@ -74,19 +74,29 @@ require([
         IPython.CodeCell.options_default.cm_config.lineWrapping = true;
 
         $('div#header-container').hide();
-        $('.header-bar').hide(); // 1-3px high! WTF?!
+        $('.header-bar').hide(); // 1px high! WTF?!
         $('div#maintoolbar').hide();
 
-        var os = navigator.appVersion.indexOf('Mac')
-        if (os != -1) {
-            var f = 'Cmd-f';
-            var r = 'Cmd-Alt-f';
-            var ra = 'Cmd-Alt-r';
-        } else {
-            var f = 'Ctrl-f';
-            var r = 'Ctrl-Shift-f';
-            var ra = 'Ctrl-Shift-r';
-        }
+        IPython.keyboard_manager.command_shortcuts.add_shortcut('Alt-m', {
+            help : 'toggle menu bar',
+            help_index : 'zz',
+            handler : function (event) {
+                $('div#menubar-container').toggle();
+                IPython.menubar._size_header()
+                return false;
+            }
+        });
+
+        IPython.keyboard_manager.command_shortcuts.add_shortcut('Alt-h', {
+            help : 'toggle header',
+            help_index : 'zz',
+            handler : function (event) {
+                $('div#header-container').toggle();
+                $('.header-bar').toggle();
+                IPython.menubar._size_header()
+                return false;
+            }
+        });
 
         IPython.keyboard_manager.command_shortcuts.add_shortcut('Alt-c', {
             help : 'clear all output',
@@ -133,26 +143,6 @@ require([
             }
         });
 
-        IPython.keyboard_manager.command_shortcuts.add_shortcut('Alt-m', {
-            help : 'toggle menu bar',
-            help_index : 'zz',
-            handler : function (event) {
-                $('div#menubar-container').toggle();
-                IPython.menubar._size_header()
-                return false;
-            }
-        });
-
-        IPython.keyboard_manager.command_shortcuts.add_shortcut('Alt-h', {
-            help : 'toggle header',
-            help_index : 'zz',
-            handler : function (event) {
-                $('div#header-container').toggle();
-                IPython.menubar._size_header()
-                return false;
-            }
-        });
-
         IPython.keyboard_manager.command_shortcuts.add_shortcut('Alt-n', {
             help : 'toggle line number all cells',
             help_index : 'zz',
@@ -185,6 +175,21 @@ require([
                 return false;
             }
         });
+    })
+)
+        // This is Codemirror RegEx find/search/replace
+        // NOT WORKING in IPython 3.x.x
+
+        // var os = navigator.appVersion.indexOf('Mac')
+        // if (os != -1) {
+        //     var f = 'Cmd-f';
+        //     var r = 'Cmd-Alt-f';
+        //     var ra = 'Cmd-Alt-r';
+        // } else {
+        //     var f = 'Ctrl-f';
+        //     var r = 'Ctrl-Shift-f';
+        //     var ra = 'Ctrl-Shift-r';
+        // }
 
         // IPython.keyboard_manager.edit_shortcuts.add_shortcut(f, {
         //     help : 'search',
@@ -233,6 +238,3 @@ require([
         //         return false;
         //     }}
         // );
-
-    })
-)
