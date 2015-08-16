@@ -74,6 +74,7 @@ require([
         IPython.CodeCell.options_default.cm_config.lineWrapping = true;
 
         $('div#header-container').hide();
+        $('.header-bar').hide(); // 1-3px high! WTF?!
         $('div#maintoolbar').hide();
 
         var os = navigator.appVersion.indexOf('Mac')
@@ -136,7 +137,7 @@ require([
             help : 'toggle menu bar',
             help_index : 'zz',
             handler : function (event) {
-                $('div#menubar-container').toggle();
+                $('div#menubar-container.container').toggle();
                 IPython.menubar._size_header()
                 return false;
             }
