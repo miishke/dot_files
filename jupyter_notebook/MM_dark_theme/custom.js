@@ -137,6 +137,7 @@ require([
             help_index : 'zz',
             handler : function (event) {
                 $('div#menubar-container').toggle();
+                IPython.menubar._size_header()
                 return false;
             }
         });
@@ -146,6 +147,7 @@ require([
             help_index : 'zz',
             handler : function (event) {
                 $('div#header-container').toggle();
+                IPython.menubar._size_header()
                 return false;
             }
         });
