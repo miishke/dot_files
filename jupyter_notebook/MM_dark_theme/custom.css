@@ -27,6 +27,7 @@ div.CodeMirror, div.output_area pre, div.output_wrapper, div.prompt {
 /*Global setting ============================================================*/
 body {
   background-color: #2b303b;
+  /*font-family: 'Noto Sans', sans-serif;*/
 }
 
 /*Landing page ==============================================================*/
@@ -168,7 +169,7 @@ div.cell.selected {
   /*border-color: #b48ead;*/
   border-top: none;
   border-right: none;
-  border-bottom: none;
+  border-bottom:none;
   border-left: 4px solid #477ca1;
 }
 
@@ -183,7 +184,7 @@ div.text_cell_render, div.output_html {
   background-color: #c0c5ce;;
   color: #2b303b;
   font-size: 100%;
-  padding: 1px;
+  padding: 4px 3px 1px 5px;
 }
 
 .rendered_html table, .rendered_html th, .rendered_html tr, .rendered_html td {
@@ -201,8 +202,32 @@ div.text_cell_render, div.output_html {
   font-size: 14px;
 }
 
-div.output_stderr {background-color: #f2777a;}
+div.output_stderr {background-color: #bf616a;}
 div.output_stderr pre {color: #2e2e2e;}
+
+#complete.completions {
+  box-shadow: none;
+}
+
+/*Widgets ===================================================================*/
+
+div.widget-subarea{
+  font-family: 'Noto Sans', sans-serif !important;
+  font-size: 15px;
+  color: #bbc0c9;
+  /*margin-left: 0px !important;*/
+}
+
+button.close {
+  color: #bbc0c9;
+  opacity: 1;
+  text-shadow: none;
+}
+
+.close:hover {
+  color: #ab4642;
+  opacity: 1;
+}
 
 /*CodeMirror styling ========================================================*/
 .cm-s-ipython.CodeMirror {background: #2b303b; color: #dfe1e8;}
@@ -237,17 +262,19 @@ span.ansigray {color: #a7adba;}
 .cm-s-ipython span.cm-property, .cm-s-ipython span.cm-attribute {
   color: #bbc0c9;
 }
-.cm-s-ipython span.cm-comment {color: #8c8c8c; font-style: normal;}
+.cm-s-ipython span.cm-keyword {color: #ab4642;}
 .cm-s-ipython span.cm-atom {color: #a16a94;}
 .cm-s-ipython span.cm-number {color: #dc9656;}
-.cm-s-ipython span.cm-keyword {color: #ab4642;}
-.cm-s-ipython span.cm-string {color: #a1b56c;}
-.cm-s-ipython span.cm-operator {color: #bc9458;}
-.cm-s-ipython span.cm-builtin {color: #b3588e;}
-.cm-s-ipython span.cm-meta {color: #6a9fb5;}
+.cm-s-ipython span.cm-def {color: #477ca1;}
 .cm-s-ipython span.cm-variable {color: #bbc0c9;}
 .cm-s-ipython span.cm-variable-2 {color: #6699cc;}
-.cm-s-ipython span.cm-def {color: #477ca1;}
+.cm-s-ipython span.cm-variable-3 {color: #0080ff}
+.cm-s-ipython span.cm-operator {color: #bc9458;}
+.cm-s-ipython span.cm-comment {color: #8c8c8c; font-style: normal;}
+.cm-s-ipython span.cm-string {color: #a1b56c;}
+.cm-s-ipython span.cm-string-2 {color: #fd971f}
+.cm-s-ipython span.cm-meta {color: #6a9fb5;}
+.cm-s-ipython span.cm-builtin {color: #b3588e;}
 .cm-s-ipython span.cm-bracket {color: #c0c5ce;}
 .cm-s-ipython span.cm-tag {color: #f2777a;}
 .cm-s-ipython span.cm-link {color: #a16a94;}
