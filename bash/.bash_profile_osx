@@ -5,8 +5,8 @@ HISTCONTROL=ignoreboth
 shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE
-HISTSIZE=7000
-HISTFILESIZE=7000
+HISTSIZE=5000
+HISTFILESIZE=20000
 HISTTIMEFORMAT='%F %T '
 
 if [ -f ~/.bash_aliases ]; then
@@ -16,3 +16,11 @@ fi
 export MKL_NUM_THREADS=2
 
 export PS1="\W \$ "
+
+source ~/.local/bin/bashmarks.sh
+
+_source_activate_complete () {
+  local cur="${COMP_WORDS[COMP_CWORD]}";
+  COMPREPLY=($(compgen -W "$(LS $HOME/miniconda3/envs | tr [:upper:] [:lower:] | lam -s \" - -s \")" -- "$cur" ));
+}
+complete -F _source_activate_complete sa
