@@ -118,3 +118,13 @@ if ! shopt -oq posix; then
 fi
 
 export PS1='\W \$ '
+
+_apt_install_complete() {
+    mapfile -t COMPREPLY < <(apt-cache --no-generate pkgnames "$2");
+}
+complete -F _apt_install_complete agi
+
+_source_activate_complete () {
+    mapfile -t COMPREPLY < <(ls $HOME/miniconda3/envs);
+}
+complete -F _source_activate_complete sa
