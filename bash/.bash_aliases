@@ -5,6 +5,7 @@ alias updd='sudo apt-get update && sudo apt-get dist-upgrade'
 alias agi='sudo apt-get install $@'
 alias aar='sudo add-apt-repository'
 alias acp='sudo apt-cache policy'
+git@github.com:miishke/dot_files.git
 alias ms='sleep 1; xset dpms force off'
 alias ah='history -a'
 alias uh='history -n'
@@ -17,4 +18,6 @@ alias ipy='ipython'
 alias jn='jupyter notebook'
 alias cls='conda list'
 alias cie='conda info -e'
-
+alias xclip='xclip -selection c'
+alias fm='free -m'
+alias fd='df -h
