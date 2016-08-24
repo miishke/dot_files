@@ -13,9 +13,9 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
-export MKL_NUM_THREADS=2
+MKL_NUM_THREADS=2
 
-export PS1="\W \$ "
+PS1="\W \$ "
 
 source ~/.local/bin/bashmarks.sh
 
