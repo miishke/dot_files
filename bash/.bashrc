@@ -42,7 +42,7 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
-export PS1='\W \$ '
+PS1='>> '
 
 _apt_install_complete() {
     mapfile -t COMPREPLY < <(apt-cache --no-generate pkgnames "$2");
