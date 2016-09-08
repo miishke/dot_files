@@ -50,6 +50,11 @@ _apt_install_complete() {
 }
 complete -F _apt_install_complete agi
 
+_acp_complete() {
+    mapfile -t COMPREPLY < <(apt-cache --no-generate pkgnames "$2");
+}
+complete -F _acp_complete acp
+
 _source_activate_complete () {
     mapfile -t COMPREPLY < <(ls $HOME/miniconda3/envs);
 }
