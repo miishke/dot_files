@@ -43,6 +43,7 @@ if [ -f ~/.bash_aliases ]; then
 fi
 
 PS1='>> '
+PROMPT_COMMAND='echo -en "\033]0; $("pwd") \a"'
 
 _apt_install_complete() {
     mapfile -t COMPREPLY < <(apt-cache --no-generate pkgnames "$2");
